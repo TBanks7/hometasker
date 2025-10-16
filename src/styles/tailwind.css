@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #7A8471; /* sage-600 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #A4B494; /* sage-400 */
+    --color-secondary-foreground: #2D3319; /* sage-900 */
+    
+    /* Accent Colors */
+    --color-accent: #E8B86D; /* amber-300 */
+    --color-accent-foreground: #2D3319; /* sage-900 */
+    
+    /* Background Colors */
+    --color-background: #FAFAF9; /* stone-50 */
+    --color-foreground: #2D3319; /* sage-900 */
+    
+    /* Surface Colors */
+    --color-card: #F5F5F3; /* stone-100 */
+    --color-card-foreground: #2D3319; /* sage-900 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2D3319; /* sage-900 */
+    
+    /* Muted Colors */
+    --color-muted: #F5F5F3; /* stone-100 */
+    --color-muted-foreground: #5A6147; /* sage-700 */
+    
+    /* Border & Input */
+    --color-border: #E7E5E4; /* stone-200 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #7A8471; /* sage-600 */
+    
+    /* Status Colors */
+    --color-success: #6B8E5A; /* green-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #D4A574; /* orange-300 */
+    --color-warning-foreground: #2D3319; /* sage-900 */
+    --color-error: #B85C57; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #B85C57; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .shadow-residential {
+    box-shadow: 0 4px 12px rgba(45, 51, 25, 0.08);
+  }
+  
+  .shadow-residential-lg {
+    box-shadow: 0 8px 24px rgba(45, 51, 25, 0.12);
+  }
+  
+  .transition-residential {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
