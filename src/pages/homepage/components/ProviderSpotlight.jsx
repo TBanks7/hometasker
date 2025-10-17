@@ -70,6 +70,8 @@ const ProviderSpotlight = () => {
     }
   ];
 
+  
+
   const liveActivity = [
     { provider: "Mike\'s Plumbing", service: "Emergency Repair", time: "2 min ago" },
     { provider: "CleanPro Services", service: "Deep Cleaning", time: "5 min ago" },
@@ -81,7 +83,7 @@ const ProviderSpotlight = () => {
     <section className="py-16 lg:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="font-headline text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Meet Our Top-Rated Local Professionals
           </h2>
@@ -89,10 +91,10 @@ const ProviderSpotlight = () => {
             Every provider is thoroughly vetted, insured, and committed to delivering 
             exceptional service to your neighborhood.
           </p>
-        </div>
+        </div> */}
 
         {/* Live Activity Banner */}
-        <div className="bg-success/10 border border-success/20 rounded-lg p-4 mb-12">
+        {/* <div className="bg-success/10 border border-success/20 rounded-lg p-4 mb-12">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
             <h3 className="font-headline font-semibold text-foreground">Live Activity</h3>
@@ -108,13 +110,13 @@ const ProviderSpotlight = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Featured Providers Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        {/* <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {featuredProviders?.map((provider) => (
             <div key={provider?.id} className="bg-card rounded-xl border border-border overflow-hidden shadow-residential hover:shadow-residential-lg transition-residential">
-              {/* Provider Image */}
+
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={provider?.image}
@@ -137,9 +139,8 @@ const ProviderSpotlight = () => {
                 </div>
               </div>
 
-              {/* Provider Info */}
+
               <div className="p-6">
-                {/* Header */}
                 <div className="flex items-center gap-3 mb-4">
                   <Image
                     src={provider?.avatar}
@@ -156,7 +157,6 @@ const ProviderSpotlight = () => {
                   </div>
                 </div>
 
-                {/* Rating & Reviews */}
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex items-center gap-1">
                     <div className="flex text-yellow-400">
@@ -173,7 +173,7 @@ const ProviderSpotlight = () => {
                   </span>
                 </div>
 
-                {/* Specializations */}
+
                 <div className="mb-4">
                   <div className="flex flex-wrap gap-2">
                     {provider?.specializations?.map((spec) => (
@@ -187,7 +187,7 @@ const ProviderSpotlight = () => {
                   </div>
                 </div>
 
-                {/* Badges */}
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {provider?.badges?.map((badge) => (
                     <div key={badge} className="flex items-center gap-1">
@@ -197,7 +197,7 @@ const ProviderSpotlight = () => {
                   ))}
                 </div>
 
-                {/* Recent Work */}
+
                 <div className="bg-muted/50 p-3 rounded-lg mb-4">
                   <div className="flex items-center gap-2 mb-1">
                     <Icon name="CheckCircle" size={14} className="text-success" />
@@ -211,7 +211,7 @@ const ProviderSpotlight = () => {
                   </p>
                 </div>
 
-                {/* Footer */}
+
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-sm font-medium text-foreground">{provider?.pricing}</div>
@@ -229,7 +229,7 @@ const ProviderSpotlight = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Trust Indicators */}
         <div className="bg-card rounded-xl border border-border p-8">
@@ -281,14 +281,14 @@ const ProviderSpotlight = () => {
         </div>
 
         {/* View All Providers CTA */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Link to="/services">
             <button className="inline-flex items-center gap-2 px-8 py-3 bg-outline border border-border text-foreground font-medium rounded-lg hover:bg-muted transition-residential">
               Browse All Providers
               <Icon name="Users" size={16} />
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
